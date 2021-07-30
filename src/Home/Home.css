@@ -1,5 +1,5 @@
 .member-card-image {
-    width: 200%;
+    width: 100%;
     text-align: center;
     height: 100px;
     background-color: black;
@@ -28,4 +28,19 @@
 .main-card {
     position: fixed !important;
     top: 50% !important;
+}
+
+h1 { /*header*/
+  color: white;
+}
+h2 { /*sub header*/
+  color:  white;
+}
+
+h3 { 
+  color:  white;
+}
+
+h4 { 
+  color:  white;
 }
