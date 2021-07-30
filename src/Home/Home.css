@@ -2,8 +2,8 @@
     width: 100%;
     text-align: center;
     height: 100px;
-    background-color: lightgrey;
-    color: blue;
+    background-color: black;
+    color: lightgrey;
     z-index: -1000;
     overflow: hidden;
     flex-flow: row nowrap;
