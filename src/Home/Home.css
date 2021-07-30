@@ -1,7 +1,7 @@
 .member-card-image {
     width: 200%;
     text-align: center;
-    height: 200px;
+    height: 100px;
     background-color: black;
     color: lightgrey;
     z-index: -1000;
