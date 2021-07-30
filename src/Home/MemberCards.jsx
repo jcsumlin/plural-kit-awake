@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './Home.css'
-import {Grid, Typography, Color} from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 class MemberCards extends Component {
     state = {};
 
