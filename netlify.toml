@@ -1,0 +1,15 @@
+[build]
+command = "yarn build"
+publish = "build/"
+
+
+[build.processing]
+css = { bundle = true, minify = true }
+js = { bundle = true, minify = true }
+html = { pretty_urls = true }
+images = { compress = true }
+
+[template.environment]
+SYSTEM_ID = "Your System ID"
+PK_TOKEN_AUTH = "use pk;token to get your API Token"
+
