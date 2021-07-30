@@ -5,21 +5,21 @@ export default class PluralKitFetcher {
     baseURL = "https://api.pluralkit.me/v1/"
     headers = {
         headers: {
-            'Authorization': `token ${process.env.PK_TOKEN_AUTH}`
+            'Authorization': `token ${process.env.REACT_APP_PK_TOKEN_AUTH}`
         }
     }
 
     async getSystem() {
         let results = {}
 
-        let system_info = await axios.get(this.baseURL + 's/' + (process.env.SYSTEM_ID), this.headers)
+        let system_info = await axios.get(this.baseURL + 's/' + (process.env.REACT_APP_SYSTEM_ID), this.headers)
         results.system = {}
         results.system.id = system_info.data.id
         results.system.name = system_info.data.name
         results.system.avatar_url = system_info.data.avatar_url
         results.system.timezone = system_info.data.timezone
 
-        let fronter_info_url = this.baseURL + `s/${process.env.SYSTEM_ID}/fronters`;
+        let fronter_info_url = this.baseURL + `s/${process.env.REACT_APP_SYSTEM_ID}/fronters`;
         let fronter_info = await axios.get(fronter_info_url, this.headers)
 
         results.members = {}
@@ -38,7 +38,7 @@ export default class PluralKitFetcher {
             members: Object.keys(results.members)
         }
 
-        let switch_url = this.baseURL + `s/${process.env.SYSTEM_ID}/switches`;
+        let switch_url = this.baseURL + `s/${process.env.REACT_APP_SYSTEM_ID}/switches`;
         let switch_info = await axios.get(switch_url, this.headers)
 
         let switch_out_id = null
@@ -59,7 +59,6 @@ export default class PluralKitFetcher {
                 }
             }
         }
-        console.log(results)
         return results;
 
     }
