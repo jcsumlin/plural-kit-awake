@@ -4,10 +4,6 @@ import {Grid, Typography} from "@material-ui/core";
 class MemberCards extends Component {
     state = {};
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Grid item xs={2}>
