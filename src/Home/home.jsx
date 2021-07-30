@@ -1,25 +1,8 @@
 import React, {Component} from "react";
 import PluralKitFetcher from "../pkAPI/PluralKitFetcher";
-import {Grid, Paper, Typography} from '@material-ui/core';
+import {Grid, Paper, Typography} from "@material-ui/core";
 import MemberCards from "./MemberCards";
 import './Home.css'
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      light: '#757ce8',
-      main: '#3f50b5',
-      dark: '#002884',
-      contrastText: '#fff',
-    },
-    secondary: {
-      light: '#ff7961',
-      main: '#f44336',
-      dark: '#ba000d',
-      contrastText: '#000',
-    },
-  },
-});
 
 class Home extends Component {
     state = {
