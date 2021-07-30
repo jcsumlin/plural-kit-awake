@@ -5,14 +5,14 @@ export default class PluralKitFetcher {
     baseURL = "https://api.pluralkit.me/v1/"
     headers = {
         headers: {
-            'Authorization': `token ${process.env.PK_TOKEN_AUTH}`
+            'Authorization': `token ${process.env.REACT_APP_PK_TOKEN_AUTH}`
         }
     }
 
     async getSystem() {
         let results = {}
 
-        let system_info = await axios.get(this.baseURL + 's/' + (process.env.SYSTEM_ID), this.headers)
+        let system_info = await axios.get(this.baseURL + 's/' + (process.env.REACT_APP_SYSTEM_ID), this.headers)
         results.system = {}
         results.system.id = system_info.data.id
         results.system.name = system_info.data.name
