@@ -13,7 +13,7 @@ class Home extends Component {
     async componentDidMount() {
         let pk = new PluralKitFetcher()
         let res = await pk.getSystem()
-        let is_asleep = res.current_switch.members.length === 0 ? true : false
+        let is_asleep = res.current_switch.members.length === 0
         return this.setState({pk_data: res, is_asleep: is_asleep})
     }
 
