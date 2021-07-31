@@ -30,17 +30,6 @@
     top: 50% !important;
 }
 
-h1 { /*header*/
+p { /*header*/
   color: white;
-}
-h2 { /*sub header*/
-  color:  white;
-}
-
-h3 { 
-  color:  white;
-}
-
-h4 { 
-  color:  white;
 }
