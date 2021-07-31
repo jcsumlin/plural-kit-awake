@@ -24,6 +24,7 @@ Difference between this project and [u1f408/PKAwake](https://github.com/u1f408/P
  - [ ] Look into API response caching
  - [ ] Add custom color pallet support 
  - [ ] Ability to add custom social links
+ - [x] Better mobile support
 
 ## Installation
 
