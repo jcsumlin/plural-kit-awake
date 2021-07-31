@@ -2,6 +2,8 @@
 This project is a clone of [u1f408/PKAwake](https://github.com/u1f408/PKAwake) written in react with a few changes
 
 ###### [DEMO](https://flamboyant-pasteur-7b73bd.netlify.app/)
+###### [Support Discord Server](https://discord.gg/UA4uUvH)
+
 
 A simple web client for the PluralKit API, displaying
 whether your system has at least one current fronter.
