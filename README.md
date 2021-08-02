@@ -25,6 +25,7 @@ Difference between this project and [u1f408/PKAwake](https://github.com/u1f408/P
  - [ ] Look into API response caching
  - [ ] Add custom color pallet support 
  - [ ] Ability to add custom social links
+ - [ ] Support PluralKit system ID in the URL to display that system instead
  - [x] Better mobile support
 
 ## Installation
