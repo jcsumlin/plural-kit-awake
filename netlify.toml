@@ -12,4 +12,5 @@ images = { compress = true }
 [template.environment]
 SYSTEM_ID = "Your System ID"
 PK_TOKEN_AUTH = "use pk;token to get your API Token"
+REACT_APP_CUSTOM_MESSAGE = "A short message you want to display under your system's status"
 
