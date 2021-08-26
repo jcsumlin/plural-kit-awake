@@ -9,10 +9,17 @@ const theme = createTheme({
                 'body': {
                     backgroundColor: colorPalette.backgroundColor,
                 },
+                '.member-card-image': {
+                    borderColor: colorPalette.aviBorderColor,
+                    textShadow: `-1px -1px 0 ${colorPalette.textBorderColor}, 1px -1px 0 ${colorPalette.textBorderColor}, -1px 1px 0 ${colorPalette.textBorderColor}, 1px 1px 0 ${colorPalette.textBorderColor}`
+                },
+                'h1,h2,h3,h4,h5,h6': {
+                    textShadow: `-1px -1px 0 ${colorPalette.textBorderColor}, 1px -1px 0 ${colorPalette.textBorderColor}, -1px 1px 0 ${colorPalette.textBorderColor}, 1px 1px 0 ${colorPalette.textBorderColor}`
+                }
             },
         },
         MuiPaper: {
-            root:{
+            root: {
                 backgroundColor: colorPalette.containerBackgroundColor,
                 color: colorPalette.textColor
             }
@@ -29,7 +36,7 @@ const theme = createTheme({
 function App() {
     return (
         <ThemeProvider theme={theme}>
-            <CssBaseline />
+            <CssBaseline/>
             <Container>
                 <Grid container id={'root'}>
                     <Home/>

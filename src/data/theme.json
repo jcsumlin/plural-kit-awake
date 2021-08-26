@@ -1,5 +1,7 @@
 {
   "backgroundColor": "#2C394B",
-  "containerBackgroundColor": "#082032",
-  "textColor": "pink"
+  "containerBackgroundColor": "white",
+  "textColor": "pink",
+  "textBorderColor": "black",
+  "aviBorderColor": "red"
 }
