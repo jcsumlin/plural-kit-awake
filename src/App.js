@@ -1,24 +1,25 @@
 import {Container, createTheme, CssBaseline, Grid, ThemeProvider} from "@material-ui/core";
 import Home from "./Home/home";
+import colorPalette from "./data/theme.json"
 
 const theme = createTheme({
     overrides: {
         MuiCssBaseline: {
             '@global': {
                 'body': {
-                    backgroundColor: process.env.REACT_APP_BACKGROUND_COLOR ? process.env.REACT_APP_BACKGROUND_COLOR : '#2C394B',
+                    backgroundColor: colorPalette.backgroundColor,
                 },
             },
         },
         MuiPaper: {
             root:{
-                backgroundColor: process.env.REACT_APP_CONTAINER_BACKGROUND_COLOR ? process.env.REACT_APP_CONTAINER_BACKGROUND_COLOR : '#082032',
-                color: process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'
+                backgroundColor: colorPalette.containerBackgroundColor,
+                color: colorPalette.textColor
             }
         },
         MuiTypography: {
             root: {
-                color: process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'
+                color: colorPalette.textColor
             },
         }
     }

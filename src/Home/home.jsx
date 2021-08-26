@@ -7,7 +7,8 @@ import MemberCards from "./MemberCards";
 import Skeleton from "@material-ui/lab/Skeleton";
 
 import "./Home.css";
-import links from "../data/links.json";
+import links from "../data/links.json"
+import theme from "../data/theme.json"
 
 class Home extends Component {
     state = {
@@ -85,21 +86,21 @@ class Home extends Component {
 function renderIcon(name) {
     switch (name.toLowerCase()) {
         case "github":
-            return <FiGithub color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
+            return <FiGithub color={theme.textColor}/>;
         case "twitter":
-            return <FiTwitter color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
+            return <FiTwitter color={theme.textColor}/>;
         case "facebook":
-            return <FiFacebook color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
+            return <FiFacebook color={theme.textColor}/>;
         case "youtube":
-            return <FiYoutube color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
+            return <FiYoutube color={theme.textColor}/>;
         case "instagram":
-            return <FiInstagram color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
+            return <FiInstagram color={theme.textColor}/>;
         case "discord":
-            return <RiDiscordLine color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
+            return <RiDiscordLine color={theme.textColor}/>;
         case "patreon":
-            return <RiPatreonLine color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'} />;
+            return <RiPatreonLine color={theme.textColor} />;
         case "website":
-            return <FiGlobe color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'} />;
+            return <FiGlobe color={theme.textColor} />;
         default:
             return;
     }
