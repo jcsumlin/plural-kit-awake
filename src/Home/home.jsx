@@ -85,21 +85,21 @@ class Home extends Component {
 function renderIcon(name) {
     switch (name.toLowerCase()) {
         case "github":
-            return <FiGithub />;
+            return <FiGithub color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
         case "twitter":
-            return <FiTwitter />;
+            return <FiTwitter color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
         case "facebook":
-            return <FiFacebook />;
+            return <FiFacebook color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
         case "youtube":
-            return <FiYoutube />;
+            return <FiYoutube color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
         case "instagram":
-            return <FiInstagram />;
+            return <FiInstagram color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
         case "discord":
-            return <RiDiscordLine />;
+            return <RiDiscordLine color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'}/>;
         case "patreon":
-            return <RiPatreonLine />;
+            return <RiPatreonLine color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'} />;
         case "website":
-            return <FiGlobe />;
+            return <FiGlobe color={process.env.REACT_APP_TEXT_COLOR ? process.env.REACT_APP_TEXT_COLOR : '#fff'} />;
         default:
             return;
     }
