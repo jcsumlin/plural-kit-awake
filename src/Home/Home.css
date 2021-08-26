@@ -7,8 +7,7 @@
     overflow: hidden;
     flex-flow: row nowrap;
     align-items: center;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    border: 4px solid #000;
+    border: 4px solid;
     border-radius: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,21 +28,6 @@
     top: 50% !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-a {
-    color: white;
-}
-a:hover {
-    color: #c2c2c2;
-}
 p {
     display: inline-block;
 }
