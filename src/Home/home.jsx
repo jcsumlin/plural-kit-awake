@@ -8,7 +8,6 @@ import Skeleton from "@material-ui/lab/Skeleton";
 
 import "./Home.css";
 import links from "../data/links.json"
-import theme from "../data/theme.json"
 
 class Home extends Component {
     state = {
@@ -86,21 +85,21 @@ class Home extends Component {
 function renderIcon(name) {
     switch (name.toLowerCase()) {
         case "github":
-            return <FiGithub color={theme.textColor}/>;
+            return <FiGithub />;
         case "twitter":
-            return <FiTwitter color={theme.textColor}/>;
+            return <FiTwitter />;
         case "facebook":
-            return <FiFacebook color={theme.textColor}/>;
+            return <FiFacebook />;
         case "youtube":
-            return <FiYoutube color={theme.textColor}/>;
+            return <FiYoutube />;
         case "instagram":
-            return <FiInstagram color={theme.textColor}/>;
+            return <FiInstagram />;
         case "discord":
-            return <RiDiscordLine color={theme.textColor}/>;
+            return <RiDiscordLine />;
         case "patreon":
-            return <RiPatreonLine color={theme.textColor} />;
+            return <RiPatreonLine  />;
         case "website":
-            return <FiGlobe color={theme.textColor} />;
+            return <FiGlobe  />;
         default:
             return;
     }

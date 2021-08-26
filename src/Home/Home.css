@@ -28,12 +28,6 @@
     top: 50% !important;
 }
 
-a {
-    color: white;
-}
-a:hover {
-    color: #c2c2c2;
-}
 p {
     display: inline-block;
 }
