@@ -1,7 +1,7 @@
 {
     "backgroundColor": "#545948",
     "containerBackgroundColor": "#8d9d90",
-    "textColor": "#edfad6",
-    "textBorderColor": "black",
-    "aviBorderColor": "#bbdb9b"
+    "textColor": "#f1fae2",
+    "textBorderColor": "white",
+    "aviBorderColor": "#b1bea3"
 }
