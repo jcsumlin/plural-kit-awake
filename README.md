@@ -39,6 +39,8 @@ Difference between this project and [u1f408/PKAwake](https://github.com/u1f408/P
 [![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jcsumlin/plural-kit-awake)
 
 This will clone my repository and ask you a few questions before deploying your new website.
+Make sure to add REACT_APP before all used variables
+Example: SYSTEM_ID should be put in as "REACT_APP_SYSTEM_ID"
 
 | Environment Variable | Description | Optional? |
 |---|---|---|
