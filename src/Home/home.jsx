@@ -7,7 +7,7 @@ import MemberCards from "./MemberCards";
 import Skeleton from "@material-ui/lab/Skeleton";
 
 import "./Home.css";
-import links from "../data/links.json";
+import links from "../data/links.json"
 
 class Home extends Component {
     state = {
@@ -97,9 +97,9 @@ function renderIcon(name) {
         case "discord":
             return <RiDiscordLine />;
         case "patreon":
-            return <RiPatreonLine />;
+            return <RiPatreonLine  />;
         case "website":
-            return <FiGlobe />;
+            return <FiGlobe  />;
         default:
             return;
     }
